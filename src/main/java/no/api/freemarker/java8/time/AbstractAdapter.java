@@ -43,7 +43,7 @@ public abstract class AbstractAdapter<E>
 
     @Override
     public Object getAdaptedObject(Class aClass) {
-        return obj;
+        return aClass.cast(obj);
     }
 
     @Override
@@ -54,4 +54,5 @@ public abstract class AbstractAdapter<E>
     public E getObject() {
         return obj;
     }
+
 }
